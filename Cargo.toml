@@ -1,0 +1,18 @@
+[package]
+name = "tool-arg-coerce"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Fix common type slips in LLM-generated tool arguments: string->int/float/bool, single-element array->scalar, null->default. Lossy and forgiving."
+authors = ["Mukunda Rao Katta <mukunda.vjcs6@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/MukundaKatta/tool-arg-coerce"
+homepage = "https://github.com/MukundaKatta/tool-arg-coerce"
+documentation = "https://docs.rs/tool-arg-coerce"
+readme = "README.md"
+keywords = ["llm", "tool-call", "coerce", "agent", "validation"]
+categories = ["parsing", "encoding"]
+exclude = [".github/*", "target/*"]
+
+[dependencies]
+serde_json = "1"
